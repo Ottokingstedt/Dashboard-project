@@ -1,0 +1,9 @@
+<div [ngClass]="{'dark-theme': isDarkTheme | async}" class="mat-app-background">
+  <app-animation></app-animation>
+  <app-nav [ngClass]="{ 'bg-light': user }"></app-nav>
+    <app-sidenav  class="sidenav"></app-sidenav>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+  </div>
+  

@@ -1,0 +1,19 @@
+.search-brand{
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+}
+
+.form-search{
+    width: 200px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+    border: 0.5px solid gainsboro;
+}
+
+input:focus {
+    box-shadow: 0 0 1.5px 1px #57005a;
+    outline: #57005a;
+} 

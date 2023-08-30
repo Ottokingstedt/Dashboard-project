@@ -1,0 +1,45 @@
+.box{
+    display: flex;
+    position: relative;
+}
+
+.fontIcon{
+    font-size: 3rem;
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 20px 30px 20px 30px;
+    align-items: center;
+}
+
+.width_card{
+    width: 2000px;
+    background-color: transparent;
+}
+
+.filter_info{
+    margin-top: -10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.tooltip{
+    display: inline-flex;
+    border: black solid 1px;
+    color: rgb(0, 0, 0);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 20px;
+}
+
+#highchart{
+    margin-bottom: -80px;
+    position: relative;
+}
+
+

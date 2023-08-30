@@ -1,0 +1,98 @@
+<mat-card class="width_card" style="margin-bottom: 50px; border:none; box-shadow: none">
+  <div class="box">
+      <mat-icon class="fontIcon">
+          align_horizontal_left
+      </mat-icon>
+      <mat-card-header class="gird-flex">
+        <mat-card-title class="title" *ngFor="let revenue of info">
+          <div *ngIf="revenue.key == 'overview_revenue'">
+            {{ revenue.value }}
+            <h3>{{ base }} <span>&nbsp; (1,1)</span></h3>
+          </div>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-header class="filter_info">
+          <button 
+          class="tooltip" 
+          matTooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          aria-hidden="true" 
+          aria-label="tooltip"
+        >
+        ?    
+      </button>
+    </mat-card-header>
+     <highcharts-chart
+     id="highchart"
+      [Highcharts]="Highcharts"
+      [options]="barchart"
+      style="position: relative; display: block; height: 200px; background-color: transparent!important;"
+      >
+    </highcharts-chart>
+</div>
+</mat-card>
+
+<mat-card class="width_card" style="margin-bottom: 50px; border:none; box-shadow: none">
+<div class="box">
+<mat-icon class="fontIcon">
+      percent
+</mat-icon>
+<mat-card-header class="gird-flex">
+  <mat-card-title class="title" *ngFor="let gross_margin of info">
+    <div *ngIf="gross_margin.key == 'overview_gross_margin'">
+      {{ gross_margin.value }}
+      <h3>43.2%<span>&nbsp; (48,2)</span></h3>
+    </div>
+  </mat-card-title>
+</mat-card-header>
+<mat-card-header class="filter_info">
+  <button 
+  class="tooltip" 
+  matTooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  aria-hidden="true" 
+  aria-label="tooltip"
+>
+?    
+</button>
+</mat-card-header>
+<highcharts-chart
+id="highchart"
+ [Highcharts]="Highcharts"
+ [options]="barchart1"
+ style="position: relative; display: block; height: 200px; background-color: transparent!important;"
+ >
+</highcharts-chart>
+</div>
+</mat-card>
+
+<mat-card class="width_card" style="margin-bottom: 50px; border:none; box-shadow: none">
+<div class="box">
+  <mat-icon class="fontIcon">
+      arrow_circle_right
+</mat-icon>
+<mat-card-header class="gird-flex">
+  <mat-card-title class="title" *ngFor="let sell_through of info">
+    <div *ngIf="sell_through.key == 'overview_sell_through'">
+      {{ sell_through.value }}
+      <h3>4.7%<span>&nbsp; (3,9)</span></h3>
+    </div>
+  </mat-card-title>
+</mat-card-header>
+<mat-card-header class="filter_info">
+      <button 
+      class="tooltip" 
+      matTooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      aria-hidden="true" 
+      aria-label="tooltip"
+    >
+    ?    
+  </button>
+</mat-card-header>
+<highcharts-chart
+id="highchart"
+ [Highcharts]="Highcharts"
+ [options]="barchart2"
+ style="position: relative; display: block; height: 200px; background-color: transparent!important;"
+ >
+</highcharts-chart>
+</div>
+</mat-card>

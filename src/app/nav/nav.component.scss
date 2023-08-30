@@ -1,0 +1,105 @@
+.sidenav-container {
+  height: 100%;
+}
+
+#navbar{
+  overflow: hidden;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+.mat-toolbar{
+  color: black;
+}
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: transparent;
+}
+
+
+mat-toolbar-row {
+  justify-content: space-between;
+}
+
+.mat-flex-end{
+  display: flex;
+}
+
+mat-slide-toggle {
+  font-size: .875rem;
+  margin-left: 100px;
+  position: relative;
+}
+
+.darkMoon{
+position:absolute;
+margin-left: -70px;
+}
+
+
+#greetings{
+  display: contents;
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+span{
+  margin-left: 30px;
+}
+
+.sidenav-icon a{
+  text-decoration: none !important;
+  border: none !important; 
+  margin-right: 10px;
+}
+
+.material-icons {
+  margin-top: 5px;
+  margin-right: 7px;
+  border: none!important;
+  text-decoration: none !important;
+  font-weight: 400;
+}
+
+.routerLink{
+  text-decoration: none;
+  margin-top: -10px;
+}
+
+.mat-icon {
+  -webkit-user-select: none;
+  user-select: none;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  fill: currentColor;
+  height: 19px;
+  width: 30px;
+  overflow:visible;
+}
+
+.active mat-list-item{
+  border-left: 3px solid #232322!important;
+  padding-left: 10px rgb(47, 47, 47)!important;
+  margin-left: 20px!important;
+  border-radius: 2px!important;
+}
+
+.user{
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.mdc-button .mdc-button__label{
+  display: inline-flex;
+}
+
+.lightdarkicon{
+  color: rgb(228, 160, 50);
+}

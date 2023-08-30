@@ -1,0 +1,90 @@
+@use '@angular/material' as mat;
+@import '@angular/material/theming';
+@import './styles/material-theme.scss';
+@import './styles/component-themes.scss';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '@angular/material/theming';
+
+
+.dark-theme .mat-drawer-container {
+  color: white;
+  background-color: #341D35!important;
+}
+
+.mat-drawer-inner-container{
+    overflow-x: hidden!important;
+}
+
+
+body{
+    margin: 0; 
+    font-family: inter;
+    overflow-y: auto;
+}
+
+.dark-theme body{
+  background-color: #341D35!important;
+}
+
+.dark-theme .mat-app-background, 
+.dark-theme.mat-app-background {
+    background-color: #341D35!important;
+    color: white;
+}
+
+.dark-theme .mat-drawer {
+  background-color: #4C2A4D!important;
+  color: white;
+}
+
+.dark-theme .mat-toolbar-row {
+  background-color: #4C2A4D!important;
+  color: white;
+  display: flex;
+}
+
+.dark-theme .mat-expansion-panel-body{
+  background-color: #341D35!important;
+  color: white;}
+
+.dark-theme .mat-expansion-panel-header.mat-expanded {
+  background-color: #341D35!important;
+  color: white;}
+
+.dark-theme .mat-expansion-panel-header:not([aria-disabled=true]) {
+  background-color: #341D35!important;
+  color: white;}
+
+  .dark-theme .mat-mdc-paginator-container{
+    background-color: #341D35!important;
+  }
+
+.dark-theme .mat-mdc-table{
+  background-color: #341D35!important;
+}
+
+.dark-theme .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #614566!important;
+}
+
+.dark-theme .mdc-text-field--disabled.mdc-text-field--filled {
+  background-color: #3f2d43!important;
+}
+
+.dark-theme .sidenav .mat-toolbar{   
+  background: url('../src/assets/img/Horizontal-purple-logo.dark.png') center!important;
+ background-repeat: no-repeat!important;
+ background-size: 120px!important;
+}
+
+.dark-theme .lightdarkicon{
+  color: beige!important;
+}
+
+::selection {
+    background: rgba(73, 0, 80, 0.333);
+  }
+  
+
+@include mat.core();
+

@@ -1,0 +1,20 @@
+<div class="pagenotfoundContainerContent">
+    <div class="pagenotfoundContainer">
+        <div class="pagenotfoundContainerImg">
+            <img src="../../assets/img/not-found-page-purply-01-01.png" alt="" style="width: 400px;">
+        </div>
+        <div class="pagenotfoundContainertitle">
+            <h1 class="hp0">404</h1>
+            <div class="pagenotfoundContainertext">
+            <h2 class="hp1">
+                UH OH! Page Not Found.
+                <p class="p1">The page you are looking for does not exist. 
+                    How you got here is a mystery. But you can click the button below to go back to the homepage.</p>        
+            </h2>
+            </div>
+        </div>
+    </div>
+    <button mat-button class="navigateHome">
+        <a routerLink="/dashboard" [routerLinkActiveOptions]="{exact: true}" [routerLinkActive]="'active'"> Please back to startpage</a>
+    </button>
+</div>

@@ -1,0 +1,48 @@
+.sidenav-container {
+    height: 100%;
+
+  }
+  .mat-drawer-inner-container ng-tns-c83-3{
+    overflow-x: hidden;
+  }
+  .sidenav {
+    width: 200px;
+
+  }
+
+
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  sidenav-icon a{
+    text-decoration: none !important;
+    border: none !important; 
+    margin-right: 10px;
+  }
+  
+  .material-icons {
+    margin-top: 5px;
+    margin-right: 7px;
+    border: none!important;
+    text-decoration: none !important;
+    font-weight: 400;
+  }
+  
+ .routerLink{
+    text-decoration: none!important;
+    margin-top: -10px!important;
+  }
+  
+  .active mat-list-item{
+    border-left: 3px solid #a252a4 !important;
+    padding-left: 10px!important;
+    margin-left: 20px!important;
+    border-radius: 2px!important;
+  }
+  
+  .removeunderlink{
+    text-decoration: none;
+  }

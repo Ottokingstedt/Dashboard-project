@@ -1,0 +1,13 @@
+<br>
+<br>
+<div *ngFor="let about of abouts">
+  <div>
+    <markdown>
+      <h3>{{ about.title | translate }}</h3>
+      <p>{{ about.description | translate }}</p>
+    </markdown>
+  </div>
+  <br />
+  <mat-divider></mat-divider>
+  <br />
+</div>

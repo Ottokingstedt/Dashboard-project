@@ -1,0 +1,51 @@
+.ng-star-inserted{
+    overflow: hidden!important;
+}
+
+.pagenotfoundContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    overscroll-behavior-y: none!important;
+    overflow-y: hidden!important;
+}
+
+.pagenotfoundContainerContent{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overscroll-behavior-y: none!important;
+    overflow-y: hidden!important;
+}
+
+
+.pagenotfoundContainertitle{
+    display: inline-block;
+}
+
+.pagenotfoundContainertext{
+    display: inline-flex;
+    width: 500px;
+    margin-bottom: 10px!important;
+    margin-top: 0px !important;
+}
+
+.hp0{
+    font-size: 6rem;
+    margin-bottom: -8px;
+}
+
+.p1{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navigateHome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 150px;
+}

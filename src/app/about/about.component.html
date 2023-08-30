@@ -1,0 +1,11 @@
+<mat-card>
+    <ng-container *ngFor="let about of abouts">
+        <div *ngIf="about.attributes.key == 'info_description_about'">
+          <mat-card> 
+          <markdown>
+          {{ about.attributes.value }}
+          </markdown>
+          </mat-card>
+        </div>
+    </ng-container>
+</mat-card>

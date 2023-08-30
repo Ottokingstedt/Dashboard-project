@@ -1,0 +1,20 @@
+<mat-sidenav-container class="sidenav-container" style="overflow-x: hidden;">
+    <mat-sidenav #drawer class="sidenav" 
+        fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+      <mat-toolbar>       
+      </mat-toolbar>
+      <div *ngFor="let menu of menus">
+        <mat-nav-list *ngIf="menu.menuItem.length == 0">
+          <a routerLink="{{menu.path}}" [routerLinkActiveOptions]="{exact: true}" [routerLinkActive]="'active'" class="routerLink">
+            <mat-list-item>
+                  <i class="material-icons sidenav-icon">{{menu.icon}}</i>&nbsp;&nbsp;{{menu.title}}
+              </mat-list-item>
+            </a>
+        </mat-nav-list>
+      </div>
+    </mat-sidenav>   
+
+</mat-sidenav-container>

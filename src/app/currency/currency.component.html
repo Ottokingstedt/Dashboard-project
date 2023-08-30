@@ -1,0 +1,15 @@
+<div class="mycurrencyForm">
+    <mat-select 
+    #currency name="" 
+    class="selectedCurrency" 
+    [(ngModel)]="selectedCurrency"
+    (ngModelChange)="onCurrencyChange(currency.value)"
+    >
+    <mat-option value="EUR">EUR</mat-option>
+    <mat-option value="SEK">SEK</mat-option>
+    <mat-option value="NOK">NOK</mat-option>
+        <!-- <mat-option *ngFor="let currency of currencies" value="currency.code">{{ currency.label }}</mat-option> -->
+    </mat-select>
+</div>
+<!--    //" 
+ -->

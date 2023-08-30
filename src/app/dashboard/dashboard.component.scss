@@ -1,0 +1,226 @@
+@import '@angular/material/theming';
+
+@mixin dashboard-theme($theme){
+    $accent: map-get($theme, accent);
+    $background: map-get($theme, accent);
+    $background-color:mat-color($background, card);
+
+    // .dashboard{
+    //     background-color: mat-color($accent);
+    //     padding: 2rem;
+    //     min-height: 1000px;
+    //     min-width: 200px;
+
+    //     p{
+    //         color:$background-color;
+    //         line-height: 2.4rem;
+    //         font-size: 2rem;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //     }
+
+    // }
+}
+
+.chart-container{
+    position: relative !important;
+    display: flex;
+    align-items:flex-end;
+    overflow-x: hidden;
+}
+
+ ::ng-deep .ngx-charts .bar {
+    stroke-linecap: round!important;
+}
+
+.mat-mdc-card-content>:last-child:not(.mat-mdc-card-footer) {
+    display: flex !important;
+    position: relative;
+    margin-right: 50px;
+}
+
+ngx-charts-bar-horizontal-normalized{
+    position: relative!important;
+}
+
+ngx-charts-bar-vertical{
+    position: relative!important;
+}
+
+
+ngx-charts-bar-vertical{
+    display: flex!important;
+}
+
+
+g ngx-charts-axis-label text {
+    display: flex!important;
+    white-space: nowrap;
+    margin-top: -50px!important;
+    position: absolute!important;
+}
+
+.mat-mdc-card-content:last-child{
+    padding-bottom: 16px;
+    position: relative;
+    overflow-y: hidden;
+    display: flex!important;
+}
+
+.mat-divider{
+    border: none;
+}
+
+mat-card-content{
+    border: solid 1px rgb(220, 220, 220);
+    margin-top: 20px!important;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 30px;
+    width: auto;
+    display: flex;
+}
+
+svg .bar{
+    position: relative!important;
+}
+
+svg .ngx-charts{
+    position: relative!important;
+}
+
+.mat-mdc-card{
+    background-color: transparent;
+}
+
+.formSelect{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.formSelect .butik{
+    position: absolute;
+    margin-top: -25px;
+    margin-right: 15rem;    
+    z-index: 40;
+    font-size: 14px;
+}
+
+.formSelect .Riktmärke{
+    position: absolute;
+    margin-top: -25px;
+    margin-right: 55px;    
+    z-index: 40;
+    font-size: 14px;
+}
+
+.formSelect select{
+    display: block;
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    outline: none!important;
+    padding: 10px 30px 10px 30px;
+    box-sizing: border-box;
+    font-family: inherit;
+    -webkit-appearance :none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;  
+    z-index: 1;
+    margin-right: 20px;
+
+
+    &::-ms-expand {
+        display: none;
+        margin-right: 20px;
+    }
+
+}
+
+.mat-mdc-card{
+    background-color: transparent;
+    width: auto;
+    display: flex;
+    position: relative;
+}
+.box-icon{
+    display: flex;
+    box-shadow:  0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: transparent;
+}
+.gird-flex{
+    display: inline-flex;
+    margin-right: 50px;
+    width: 150px;
+}
+
+mat-grid-list{
+    box-shadow:  0 3px 3px rgb(0 0 0 / 0.2);
+}
+
+.title{
+    font-size: 16px!important;
+
+}
+.icon-card{
+    font-size: 3rem;
+    display: flex;
+    width: auto;
+    height: auto;
+    color: #E8CAE9;
+    padding: 20px 30px 20px 30px;
+    background-color: #5D285F!important;
+    align-items: center;
+}
+
+h3{
+    display: flex;
+}
+
+p{
+    font-weight: 100;
+    font-size: 14px;
+}
+
+span{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.filter_info{
+    margin-top: -10px;
+    margin-right: 30px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.tooltip{
+    display: inline-flex;
+    border: black solid 1px;
+    color: rgb(0, 0, 0);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 20px;
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+

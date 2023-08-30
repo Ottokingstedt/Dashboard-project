@@ -1,0 +1,13 @@
+.mat-mdc-card-subtitle {
+    padding: 17px;
+    margin-bottom: 30px!important;
+    width: 80%;
+}
+
+.mat-card{
+    background:none;
+}
+
+:host ::ng-deep markdown p {
+    padding-top: 35px;
+  }

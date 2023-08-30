@@ -1,0 +1,71 @@
+@import '@angular/material/theming';
+
+@mixin app-theme($theme){
+    $primary: mat-palette($mat-grey, 100, 100, 100);
+    $background: map-get($theme, primary);
+    $background-color:mat-color($background, card);
+
+    body .mat-app-background{
+        background-color: #ECF0F5;
+    }
+
+    .mat-toolbar-row{
+        background-color: #ECF0F5;
+        position: fixed;
+        display: block;
+        opacity: 1000;
+    }
+
+    .mat-drawer {
+        background-color: #ECF0F5;
+}
+.mat-drawer-container{
+    background-color: #ECF0F5;
+    z-index: 0!important;
+    position: inherit!important;
+}
+
+.mat-drawer-content{
+    z-index: 0!important;
+    position: inherit!important;
+}
+
+.mat-expansion-panel-body{
+    background-color: #ECF0F5;
+}
+
+.mat-expansion-panel-header.mat-expanded {
+    background-color: #ECF0F5;
+}
+
+.mat-expansion-panel-header:not([aria-disabled=true]) {
+    background-color: #ECF0F5;
+}
+
+ .mat-mdc-paginator-container{
+    background-color: #ECF0F5;
+}
+
+.mat-mdc-table{
+    background-color: #ECF0F5;
+}
+
+.sidenav .mat-toolbar{   
+     background: url('../assets/img/Horizontal-purple-logo.png') center!important;
+    background-repeat: no-repeat!important;
+    background-size: 120px!important;
+}
+
+}
+
+.content{
+    height: 110vh;
+    padding-left: 205px;
+    padding-right: 5px;
+}
+
+.mat-flex-end {
+    display: flex;
+    margin-right: 200px;
+}
+

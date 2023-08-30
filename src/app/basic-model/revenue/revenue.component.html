@@ -1,0 +1,62 @@
+<div>
+  <div style="display: flex; justify-content: end; padding-right: 25px">
+    <div>
+      <button
+        class="tooltip"
+        matTooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        aria-hidden="true"
+        aria-label="tooltip"
+      >
+        ?
+      </button>
+    </div>
+  </div>
+
+  <ng-container>
+    <highcharts-chart
+      id="highchart"
+      [Highcharts]="Highcharts"
+      [options]="barchart"
+      style="width: 100%; display: flex; background-color: transparent!important; height: 425px; overflow: hidden;"
+    >
+    </highcharts-chart>
+  </ng-container>
+
+  <div>
+    <table mat-table [dataSource]="dataSource" matSort class="matSource">
+      <!-- Grouping Column -->
+      <ng-container matColumnDef="Grouping">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Grouping</th>
+        <td mat-cell *matCellDef="let element">{{ element.Grouping }}</td>
+      </ng-container>
+
+      <!-- Revenue Column -->
+      <ng-container matColumnDef="Revenue">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          Revenue {{ base }}
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.Revenue }}</td>
+      </ng-container>
+
+      <!-- Benchmark Column -->
+      <ng-container matColumnDef="Benchmark">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          Benchmark {{ base }}
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.Benchmark }}</td>
+      </ng-container>
+
+      <!-- Rank Column -->
+      <ng-container matColumnDef="Rank">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Rank</th>
+        <td mat-cell *matCellDef="let element">{{ element.Rank }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[10, 5, 15]" showFirstLastButtons>
+    </mat-paginator>
+  </div>
+</div>
+<p>Powered by Purply technology™</p>
